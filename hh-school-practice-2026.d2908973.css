@@ -77,7 +77,7 @@ h4 {
 
 @media screen and (width <= 960px) {
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 
@@ -387,16 +387,10 @@ button {
 
 @media screen and (width <= 768px) {
   .services {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
-@media screen and (width <= 570px) {
-  .services {
     flex-direction: column;
     gap: 16px;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -415,6 +409,12 @@ button {
 .services span {
   max-width: 160px;
   display: inline-block;
+}
+
+@media screen and (width <= 768px) {
+  .services span {
+    max-width: none;
+  }
 }
 
 .services__container {
@@ -436,14 +436,13 @@ button {
 
 @media screen and (width <= 768px) {
   .services__item {
-    gap: 10px;
-    padding-right: 6px;
+    gap: 12px;
   }
 }
 
 @media screen and (width <= 530px) {
   .services__item {
-    gap: 30px;
+    gap: 22px;
   }
 }
 
